@@ -8,8 +8,18 @@ dotenv.config();
 connectDB();
 
 const app = express();
+const corsOptions = {
+  origin: [
+    'https://edu-web-teal.vercel.app', // Your Vercel frontend
+    'https://edu-web-1.onrender.com', // Your Render backend
+    'http://localhost:5173' // For local development
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+};
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
