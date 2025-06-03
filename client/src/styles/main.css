@@ -1,0 +1,123 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; padding: 0; background: #f9f9f9; color: #333;
+}
+
+.header {
+  background: #cead1bfb;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.header nav a, .header nav button {
+  color: white;
+  margin-left: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header nav button:hover, .header nav a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #050708;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0; width: 100%;
+}
+
+.main-content {
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.auth-container form input,
+.auth-container form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-container form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #004d99;
+  color: rgb(68, 46, 46);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-container form button:hover {
+  background: #003366;
+}
+
+.error-msg {
+  color: red;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.institution-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.institution-table th, .institution-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.institution-table th {
+  background-color: #222f3b;
+  color: white;
+  text-align: left;
+}
+
+.institution-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.institution-table tr:hover {
+  background-color: #ddd;
+}
+
+.institution-table button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.institution-table button:hover {
+  background-color: #990000;
+}
